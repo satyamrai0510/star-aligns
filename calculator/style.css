@@ -5,7 +5,7 @@ html {
     display: flex;
     justify-content: center;
     color: #ecf0f1;
-    background-color: rgb(23, 24, 37);
+    background-color: rgb(24, 177, 237);
     font-family: 'Fjalla One', sans-serif;
     animation: fadein 1.5s;
 }
@@ -26,8 +26,8 @@ h1 {
 }
 
 input {
-    background-color: rgba(52, 73, 94, 0.5);
-    color: #ecf0f1;
+    background-color: rgba(244, 244, 245, 0.5);
+    color: #000000;
     outline: none;
     text-align: right;
     border: none;
@@ -58,3 +58,51 @@ input {
 table {
     margin: auto;
 }
+
+button {
+    border: none;
+    background-color: rgb(236, 95, 118);
+    width: 20vw;
+    height: 10vh;
+    padding: 0.5rem 0;
+    margin: 0.25vmax;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
+}
+button:active {
+    transform: scale(0.95);
+    
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    
+}
+
+button:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
+}
+
+a{
+    outline: none;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
+}
+
+a:hover{
+    text-shadow: 0px 0px 10px rgba(241, 196, 15, 0.5);
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
+}
+
