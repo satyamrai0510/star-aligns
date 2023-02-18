@@ -100,3 +100,14 @@ console.log(
     console.clear();
   };
   
+  window.onBracketMultiplication = function () {
+    screenValue = addStr(screen.value, screen.value.indexOf("("), "*");
+    screen.value = eval(screenValue);
+    let calcHistory = JSON.parse(localStorage.getItem("calcHistory")) || [];
+    if(calcHistory.length >= maxItems){
+        calcHistory.shift();
+    }
+    calcHistory.push({screenValue, result : screen.value});
+    localStorage.setItem("calcHistory", JSON.stringify(calcHistory));
+  };
+  
