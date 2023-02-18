@@ -110,4 +110,9 @@ console.log(
     calcHistory.push({screenValue, result : screen.value});
     localStorage.setItem("calcHistory", JSON.stringify(calcHistory));
   };
+  function addStr(str, index, stringToAdd) {
+    return (
+      str.substring(0, index) + stringToAdd + str.substring(index, str.length)
+    );
+  }
   
