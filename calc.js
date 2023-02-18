@@ -92,4 +92,11 @@ console.log(
       location.reload();
     }
   });
+    
+  window.onerror = function () {
+    alert("PLEASE INPUT VALID EXPRESSION");
+    screenValue = "";
+    screen.value = screenValue;
+    console.clear();
+  };
   
