@@ -110,9 +110,29 @@ console.log(
     calcHistory.push({screenValue, result : screen.value});
     localStorage.setItem("calcHistory", JSON.stringify(calcHistory));
   };
+  
   function addStr(str, index, stringToAdd) {
     return (
       str.substring(0, index) + stringToAdd + str.substring(index, str.length)
     );
   }
   
+  function checkForBracketMulti() {
+
+    if (
+      screen.value.includes("(") &&
+      !isNaN(screen.value.charAt(screen.value.indexOf("(") - 1))
+    ) {
+      window.onBracketMultiplication();
+      return;
+    } else {
+      screen.value = eval(screenValue);
+      let calcHistory = JSON.parse(localStorage.getItem("calcHistory")) || [];
+      if(calcHistory.length >= maxItems){
+          calcHistory.shift();
+      }
+      calcHistory.push({screenValue, result : screen.value});
+      localStorage.setItem("calcHistory", JSON.stringify(calcHistory));
+    }
+    flag = 1;
+  }
