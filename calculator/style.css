@@ -10,6 +10,15 @@ html {
     animation: fadein 1.5s;
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100%   {
+        opacity: 100%;
+    }
+  }
+
 h1 {
     font-size: 2.5rem;
     font-weight: 500;
