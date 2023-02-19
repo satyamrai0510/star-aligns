@@ -49,3 +49,18 @@ input {
 table {
     margin: auto;
 }
+
+button {
+    border: none;
+    background-color: rgb(236, 95, 118);
+    width: 20vw;
+    height: 10vh;
+    padding: 0.5rem 0;
+    margin: 0.25vmax;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
+}
