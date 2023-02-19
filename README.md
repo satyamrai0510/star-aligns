@@ -1,5 +1,5 @@
 #Button Effect
-*[click here..](https://satyamrai0510.github.io/star-aligns/button_effect/)
+* [click here..](https://satyamrai0510.github.io/star-aligns/button_effect/)
 
-#Calcultor
+# Calcultor
 *[click here..](https://satyamrai0510.github.io/star-aligns/calculator/)
