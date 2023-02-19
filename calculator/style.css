@@ -45,3 +45,7 @@ input {
     padding: 0.25rem;
     display: inline-block;
 }
+
+table {
+    margin: auto;
+}
