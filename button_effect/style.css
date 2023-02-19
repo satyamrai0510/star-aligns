@@ -39,7 +39,6 @@ body
     background: #f00;
     transition: 0.5s;
 }
-
 .container a:nth-child(1):before,
 .container a:nth-child(1):after
 {
