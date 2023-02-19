@@ -64,9 +64,20 @@ button {
     transition: all 0.5s ease;
     -o-transition: all ease 0.5s;
 }
+
 button:active {
     transform: scale(0.95);
     
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     
+}
+
+button:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
 }
