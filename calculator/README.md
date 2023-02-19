@@ -1,1 +1,1 @@
-# Calcultor [click here..](https://satyamrai0510.github.io/star-aligns/calculator/)
+# Calculator [click here..](https://satyamrai0510.github.io/star-aligns/calculator/)
