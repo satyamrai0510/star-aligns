@@ -1,11 +1,10 @@
 console.log(
-    "Javascript Calculator Made by Satyam Rai"
+    "Javascript Calculator"
   );
   let flag = 0;
   function isNumber(char) {
     return /^\d$/.test(char);
   }
-  
   document.getElementById("answer").readOnly = true;
   let screen = document.getElementById("answer");
   buttons = document.querySelectorAll("button");
@@ -48,7 +47,6 @@ console.log(
       }
     });
   }
-  
   document.addEventListener("keydown", function (event) {
     if (event.shiftKey == 57) {
       event.key = "(";
@@ -92,14 +90,12 @@ console.log(
       location.reload();
     }
   });
-    
   window.onerror = function () {
     alert("PLEASE INPUT VALID EXPRESSION");
     screenValue = "";
     screen.value = screenValue;
     console.clear();
   };
-  
   window.onBracketMultiplication = function () {
     screenValue = addStr(screen.value, screen.value.indexOf("("), "*");
     screen.value = eval(screenValue);
@@ -110,15 +106,12 @@ console.log(
     calcHistory.push({screenValue, result : screen.value});
     localStorage.setItem("calcHistory", JSON.stringify(calcHistory));
   };
-  
   function addStr(str, index, stringToAdd) {
     return (
       str.substring(0, index) + stringToAdd + str.substring(index, str.length)
     );
   }
-  
   function checkForBracketMulti() {
-
     if (
       screen.value.includes("(") &&
       !isNaN(screen.value.charAt(screen.value.indexOf("(") - 1))
