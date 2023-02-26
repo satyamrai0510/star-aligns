@@ -99,3 +99,13 @@ body.on .bulb span:nth-child(2)
 {
     box-shadow: -20px 20px 0 10px #fff;
 }
+.wire
+{
+    position: absolute;
+    left: calc(50% - 2px);
+    bottom: 50%;
+    width: 4px;
+    height: 60vh;
+    background: #000;
+    z-index: 1;
+}
