@@ -52,3 +52,16 @@ body.on .bulb::before
 {
     background: #fff;
 }
+body.on .bulb::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(40px);
+}
