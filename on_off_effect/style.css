@@ -16,3 +16,12 @@ body.on
 {
     background: radial-gradient(#555,#111);
 }
+.bulb
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #444;
+    border-radius: 50%;
+    z-index: 2;
+}
