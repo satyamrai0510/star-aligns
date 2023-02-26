@@ -17,5 +17,14 @@
         </div>
     </div>
     <audio id="audio" src="sound_effect/click.mp3" autostart="false"></audio>
+    <script>
+        let btn = document.querySelector('.btn');
+        let body = document.querySelector('body');
+        let audio = document.querySelector('#audio');
+        btn.onclick = function(){
+            body.classList.toggle('on');
+            audio.play();
+        }
+    </script>
 </body>
 </html>
