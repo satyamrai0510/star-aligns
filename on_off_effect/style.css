@@ -109,3 +109,17 @@ body.on .bulb span:nth-child(2)
     background: #000;
     z-index: 1;
 }
+.switch
+{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(#eee,#ccc,#eee);
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
